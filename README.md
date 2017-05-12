@@ -1,4 +1,4 @@
 # DepsTest
 
-**TODO: Add description**
+run `mix run deps.exs`
 
