@@ -10,6 +10,7 @@ defmodule Bar.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
+      supervisor(Task.Supervisor, [[name: Bar.TaskSupervisor]])
       # Starts a worker by calling: Bar.Worker.start_link(arg1, arg2, arg3)
       # worker(Bar.Worker, [arg1, arg2, arg3]),
     ]
